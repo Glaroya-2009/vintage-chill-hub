@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { Cannabis, ArrowRight, Star, Heart, Sparkles } from 'lucide-react';
+import { Cannabis, ArrowRight, Star, Heart, Sparkles, User, Coffee, BookOpen, Mail } from 'lucide-react';
 
 const HomePage = () => {
   return (
@@ -130,7 +130,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
-// Component imports
-import { User } from 'lucide-react';
-import { Mail } from 'lucide-react';
