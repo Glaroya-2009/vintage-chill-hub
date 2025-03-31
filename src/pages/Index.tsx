@@ -4,6 +4,7 @@ import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Cannabis, ArrowRight, Star, Heart, Sparkles, User, Coffee, BookOpen, Mail } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const HomePage = () => {
   return (
@@ -28,16 +29,27 @@ const HomePage = () => {
                 <Cannabis className="h-24 w-24 animate-float" />
               </div>
               
-              <h1 className="text-5xl md:text-7xl font-bold text-vintage-brown mb-6 tracking-tight">
-                Gabriel<span className="text-vintage-orange">'s</span> <br />
-                <span className="text-vintage-green">Vintage</span> Vibe
-              </h1>
+              <div className="flex flex-col md:flex-row items-center gap-8 mb-6">
+                <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-vintage-orange shadow-xl">
+                  <img
+                    src="/lovable-uploads/470251c0-5e0d-4df1-ac47-bb697e3ab111.png"
+                    alt="Gabriel Laroya"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h1 className="text-4xl md:text-6xl font-bold text-vintage-brown tracking-tight">
+                    Gabriel<span className="text-vintage-orange">'s</span> <br />
+                    <span className="text-vintage-green">Vintage</span> Vibe
+                  </h1>
+                  
+                  <p className="text-xl md:text-2xl text-vintage-brown/80 mt-2 font-retro">
+                    Grade 10 • San Beda College Alabang
+                  </p>
+                </div>
+              </div>
               
-              <p className="text-xl md:text-2xl text-vintage-brown/80 mb-8 font-retro">
-                Grade 10 • San Beda College Alabang
-              </p>
-              
-              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+              <div className="flex flex-wrap gap-4 justify-center md:justify-start mt-8">
                 <Link to="/profile">
                   <Button className="retro-button flex items-center gap-2">
                     View Profile <ArrowRight className="h-4 w-4" />
