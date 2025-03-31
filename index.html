@@ -1,26 +1,211 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vintage-chill-hub</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Gabriel's Vintage Vibe</title>
+    <meta name="description" content="Gabriel's Vintage Vibe - Personal Website" />
+    <meta name="author" content="Gabriel Laroya" />
 
-    <meta property="og:title" content="Lovable Generated Project" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="header">
+        <div class="container">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">☮</span>
+            <h1 class="logo-text">Gabriel's Vibe</h1>
+          </a>
+          
+          <!-- Desktop Navigation -->
+          <nav class="nav-desktop">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="profile.html" class="nav-link">Profile</a>
+            <a href="hobbies.html" class="nav-link">Hobbies</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+          
+          <!-- Mobile Menu Button -->
+          <button class="menu-toggle">
+            <span class="menu-icon">☰</span>
+          </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile">
+          <a href="index.html" class="nav-link active">
+            <span class="icon">☮</span>
+            <span>Home</span>
+          </a>
+          <a href="profile.html" class="nav-link">
+            <span class="icon">👤</span>
+            <span>Profile</span>
+          </a>
+          <a href="hobbies.html" class="nav-link">
+            <span class="icon">☕</span>
+            <span>Hobbies</span>
+          </a>
+          <a href="about.html" class="nav-link">
+            <span class="icon">📖</span>
+            <span>About</span>
+          </a>
+          <a href="contact.html" class="nav-link">
+            <span class="icon">✉</span>
+            <span>Contact</span>
+          </a>
+        </nav>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-background"></div>
+          <div class="hero-pattern"></div>
+          
+          <div class="vintage-paper hero-content">
+            <div class="hero-decoration left">
+              <div class="cannabis-icon">☮</div>
+            </div>
+            <div class="hero-decoration right">
+              <div class="cannabis-icon">☮</div>
+            </div>
+            
+            <div class="hero-profile">
+              <div class="profile-image">
+                <img src="lovable-uploads/470251c0-5e0d-4df1-ac47-bb697e3ab111.png" alt="Gabriel Laroya">
+              </div>
+              <div class="profile-info">
+                <h1>Gabriel<span class="accent-orange">'s</span> <br>
+                  <span class="accent-green">Vintage</span> Vibe
+                </h1>
+                
+                <p class="subtitle">
+                  Grade 10 • San Beda College Alabang
+                </p>
+              </div>
+            </div>
+            
+            <div class="hero-buttons">
+              <a href="profile.html" class="retro-button">
+                View Profile <span class="arrow">→</span>
+              </a>
+              <a href="contact.html" class="outline-button">
+                Get in Touch
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Featured Sections -->
+        <section class="featured-sections">
+          <!-- Profile Teaser -->
+          <div class="retro-card">
+            <div class="card-icon">
+              <span class="icon">👤</span>
+            </div>
+            <h2>Profile</h2>
+            <p>
+              Get to know me better! My personal journey, education and what makes me unique.
+            </p>
+            <a href="profile.html" class="card-link accent-orange">
+              View Profile <span class="arrow">→</span>
+            </a>
+          </div>
+          
+          <!-- Hobbies Teaser -->
+          <div class="retro-card">
+            <div class="card-icon">
+              <span class="icon">☕</span>
+            </div>
+            <h2>Hobbies</h2>
+            <p>
+              From basketball to taekwondo, discover the activities I'm passionate about.
+            </p>
+            <a href="hobbies.html" class="card-link accent-green">
+              See My Hobbies <span class="arrow">→</span>
+            </a>
+          </div>
+          
+          <!-- About Teaser -->
+          <div class="retro-card">
+            <div class="card-icon">
+              <span class="icon">📖</span>
+            </div>
+            <h2>About</h2>
+            <p>
+              Learn about my strengths, weaknesses, and the journey that made me who I am today.
+            </p>
+            <a href="about.html" class="card-link accent-purple">
+              Learn More <span class="arrow">→</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+          <div class="vintage-paper quote-container">
+            <span class="star-icon">⭐</span>
+            <blockquote>
+              "My strength is her kiss, and my weakness is when she doesn't chat with me."
+            </blockquote>
+            <p class="quote-author">— Gabriel Laroya</p>
+          </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section class="contact-cta">
+          <div class="cta-container">
+            <h2>Let's Connect</h2>
+            <p>
+              Want to chat or collaborate? Reach out and let's make something happen.
+            </p>
+            <a href="contact.html" class="retro-button">
+              <span class="icon">✉</span>
+              Contact Me
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-info">
+              <p class="footer-name">Gabriel Laroya</p>
+              <p class="footer-school">San Beda College Alabang</p>
+            </div>
+            <div class="footer-meta">
+              <p class="footer-copyright">© <span id="current-year">2024</span> Vintage Vibes</p>
+              <p class="footer-tagline">Designed with ☮ and ♥</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Set current year in footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      
+      // Mobile menu toggle
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navMobile = document.querySelector('.nav-mobile');
+      
+      menuToggle.addEventListener('click', () => {
+        navMobile.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+      });
+    </script>
   </body>
 </html>

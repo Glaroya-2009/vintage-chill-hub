@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Gabriel's Vintage Vibe</title>
+    <meta name="description" content="Contact Gabriel Laroya - Get in touch and connect" />
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="header">
+        <div class="container">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">☮</span>
+            <h1 class="logo-text">Gabriel's Vibe</h1>
+          </a>
+          
+          <!-- Desktop Navigation -->
+          <nav class="nav-desktop">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="profile.html" class="nav-link">Profile</a>
+            <a href="hobbies.html" class="nav-link">Hobbies</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+          </nav>
+          
+          <!-- Mobile Menu Button -->
+          <button class="menu-toggle">
+            <span class="menu-icon">☰</span>
+          </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile">
+          <a href="index.html" class="nav-link">
+            <span class="icon">☮</span>
+            <span>Home</span>
+          </a>
+          <a href="profile.html" class="nav-link">
+            <span class="icon">👤</span>
+            <span>Profile</span>
+          </a>
+          <a href="hobbies.html" class="nav-link">
+            <span class="icon">☕</span>
+            <span>Hobbies</span>
+          </a>
+          <a href="about.html" class="nav-link">
+            <span class="icon">📖</span>
+            <span>About</span>
+          </a>
+          <a href="contact.html" class="nav-link active">
+            <span class="icon">✉</span>
+            <span>Contact</span>
+          </a>
+        </nav>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <div class="container">
+          <h1 class="page-title">
+            <span class="icon">✉</span> Contact Me
+          </h1>
+          
+          <p class="page-placeholder">Contact page content will go here.</p>
+          
+          <div class="page-actions">
+            <a href="index.html" class="retro-button">
+              <span class="icon">🏠</span> Back to Home
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-info">
+              <p class="footer-name">Gabriel Laroya</p>
+              <p class="footer-school">San Beda College Alabang</p>
+            </div>
+            <div class="footer-meta">
+              <p class="footer-copyright">© <span id="current-year">2024</span> Vintage Vibes</p>
+              <p class="footer-tagline">Designed with ☮ and ♥</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Set current year in footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      
+      // Mobile menu toggle
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navMobile = document.querySelector('.nav-mobile');
+      
+      menuToggle.addEventListener('click', () => {
+        navMobile.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+      });
+    </script>
+  </body>
+</html>
