@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - Gabriel's Vintage Vibe</title>
+    <title>Contact - Gabriel's Medical Cannabis</title>
     <meta name="description" content="Contact Gabriel Laroya - Get in touch and connect" />
     
     <link rel="stylesheet" href="styles/main.css">
@@ -19,8 +19,8 @@
       <header class="header">
         <div class="container">
           <a href="index.html" class="logo">
-            <span class="logo-icon">☮</span>
-            <h1 class="logo-text">Gabriel's Vibe</h1>
+            <span class="logo-icon">🌿</span>
+            <h1 class="logo-text">Gabriel's Wellness</h1>
           </a>
           
           <!-- Desktop Navigation -->
@@ -41,7 +41,7 @@
         <!-- Mobile Navigation -->
         <nav class="nav-mobile">
           <a href="index.html" class="nav-link">
-            <span class="icon">☮</span>
+            <span class="icon">🏠</span>
             <span>Home</span>
           </a>
           <a href="profile.html" class="nav-link">
@@ -49,7 +49,7 @@
             <span>Profile</span>
           </a>
           <a href="hobbies.html" class="nav-link">
-            <span class="icon">☕</span>
+            <span class="icon">🏀</span>
             <span>Hobbies</span>
           </a>
           <a href="about.html" class="nav-link">
@@ -70,10 +70,107 @@
             <span class="icon">✉</span> Contact Me
           </h1>
           
-          <p class="page-placeholder">Contact page content will go here.</p>
+          <div class="page-section">
+            <div class="paper-card">
+              <div style="text-align: center; margin-bottom: 24px;">
+                <p style="font-size: 18px; margin-bottom: 16px; color: var(--cannabis-text);">
+                  Have questions about medical cannabis or just want to connect? Feel free to reach out!
+                </p>
+                <div style="width: 60px; height: 2px; background-color: var(--cannabis-green); margin: 0 auto;"></div>
+              </div>
+              
+              <div class="info-grid">
+                <div class="info-card">
+                  <div class="info-icon">📱</div>
+                  <div class="info-content">
+                    <h3>Phone</h3>
+                    <p>09673779191</p>
+                    <p style="font-size: 14px; color: rgba(93, 64, 55, 0.6);">Available Mon-Fri, 9am-5pm</p>
+                  </div>
+                </div>
+                
+                <div class="info-card">
+                  <div class="info-icon">✉️</div>
+                  <div class="info-content">
+                    <h3>Email</h3>
+                    <p>Soferhandsome@.com</p>
+                    <p style="font-size: 14px; color: rgba(93, 64, 55, 0.6);">I'll respond within 24 hours</p>
+                  </div>
+                </div>
+                
+                <div class="info-card">
+                  <div class="info-icon">📍</div>
+                  <div class="info-content">
+                    <h3>Location</h3>
+                    <p>Sa bahay nyo</p>
+                    <p style="font-size: 14px; color: rgba(93, 64, 55, 0.6);">By appointment only</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="page-section">
+            <h2 class="section-title">
+              <span class="icon">📝</span> Send Me a Message
+            </h2>
+            
+            <div class="retro-card">
+              <form class="contact-form">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                </div>
+                
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" class="form-control" placeholder="What's this about?">
+                </div>
+                
+                <div class="form-group">
+                  <label for="message">Your Message</label>
+                  <textarea id="message" class="form-control" placeholder="Write your message here..."></textarea>
+                </div>
+                
+                <button type="submit" class="cannabis-button" style="width: 100%;">
+                  <span class="icon">📤</span> Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+          
+          <div class="page-section">
+            <h2 class="section-title">
+              <span class="icon">🌿</span> Scheduling a Consultation
+            </h2>
+            
+            <div class="paper-card">
+              <p style="margin-bottom: 24px;">
+                Interested in learning more about medical cannabis and wellness? Schedule a consultation to discuss:
+              </p>
+              
+              <ul class="leaf-list">
+                <li>The basics of medical cannabis and its potential benefits</li>
+                <li>How natural wellness approaches can support your health goals</li>
+                <li>Balancing academic and personal wellness</li>
+                <li>Creating a personalized wellness plan</li>
+              </ul>
+              
+              <div style="margin-top: 24px; text-align: center;">
+                <a href="#" class="cannabis-button">
+                  <span class="icon">📅</span> Schedule Consultation
+                </a>
+              </div>
+            </div>
+          </div>
           
           <div class="page-actions">
-            <a href="index.html" class="retro-button">
+            <a href="index.html" class="cannabis-button">
               <span class="icon">🏠</span> Back to Home
             </a>
           </div>
@@ -89,8 +186,8 @@
               <p class="footer-school">San Beda College Alabang</p>
             </div>
             <div class="footer-meta">
-              <p class="footer-copyright">© <span id="current-year">2024</span> Vintage Vibes</p>
-              <p class="footer-tagline">Designed with ☮ and ♥</p>
+              <p class="footer-copyright">© <span id="current-year">2024</span> Medical Cannabis</p>
+              <p class="footer-tagline">Designed with 🌿 and ♥</p>
             </div>
           </div>
         </div>
@@ -109,6 +206,16 @@
         navMobile.classList.toggle('active');
         menuToggle.classList.toggle('open');
       });
+      
+      // Form submission handler
+      const contactForm = document.querySelector('.contact-form');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Thanks for your message! I\'ll get back to you soon.');
+          contactForm.reset();
+        });
+      }
     </script>
   </body>
 </html>
